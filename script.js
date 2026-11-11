@@ -13,7 +13,7 @@
 const profile = {
     name: "Prima Arjuna Thiof Aldi",
     major: "Mahasiswa",
-    photo: "assets/foto-prima.jpg"
+    photo: "assets/foto-prima.jpeg"
 };
 
 
