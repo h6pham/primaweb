@@ -1,15 +1,3 @@
-
-/* =========================================
-   RANGKUMAN PRIMA
-   PUBLIC READ ONLY SYSTEM
-   OCEAN THEME
-========================================= */
-
-
-/* =========================================
-   1. OWNER PROFILE
-========================================= */
-
 const profile = {
     name: "Prima Arjuna Thiof Aldi",
     major: "Mahasiswa",
@@ -70,7 +58,8 @@ Kesimpulan
 Cyberpreneurship merupakan peluang bisnis yang memanfaatkan teknologi internet untuk memperoleh penghasilan. Keberhasilannya membutuhkan strategi yang tepat, konsistensi, pemilihan model bisnis, serta penerapan rumus CTPM.
         `,
         createdAt: "2026-11-11"
-    }
+    },
+
     {
         id: 3,
         course: "Cyberpreneurship",
@@ -102,8 +91,9 @@ Kesimpulan
 Domain adalah alamat website, sedangkan hosting merupakan tempat penyimpanan datanya. Keduanya diperlukan agar website dapat berjalan dan diakses melalui internet.
         `,
         createdAt: "2026-11-11"
-     },
-   {
+    },
+
+    {
         id: 4,
         course: "Cyberpreneurship",
         title: "Pertemuan 4 - Membuat Content di Blog",
@@ -146,8 +136,9 @@ Kesimpulan
 Content merupakan bagian penting dalam bisnis online karena dapat menarik pengunjung. Oleh karena itu, content harus menarik, bermanfaat, dan diperbarui secara rutin. Blogger dapat digunakan sebagai media pembuatan blog secara gratis.
         `,
         createdAt: "2026-11-11"
-   },
-   {
+    },
+
+    {
         id: 5,
         course: "Cyberpreneurship",
         title: "Pertemuan 5 - Traffic Website",
@@ -183,8 +174,9 @@ Kesimpulan
 Traffic merupakan faktor penting dalam bisnis online karena dapat meningkatkan peluang terjadinya transaksi. Pengunjung bisa didatangkan melalui mesin pencari, website lain, dan direct traffic. Jumlah serta sumber pengunjung dapat dipantau menggunakan tools analisis traffic.
         `,
         createdAt: "2026-11-11"
-   },
-   {
+    },
+
+    {
         id: 6,
         course: "Cyberpreneurship",
         title: "Pertemuan 6 - Search Engine Optimization",
@@ -232,8 +224,9 @@ Kesimpulan
 SEO merupakan teknik untuk meningkatkan peringkat website di mesin pencari. Keberhasilannya membutuhkan pemilihan keyword yang tepat serta optimasi on-page dan off-page agar website lebih mudah ditemukan pengunjung.
         `,
         createdAt: "2026-11-11"
-   },
-   {
+    },
+
+    {
         id: 7,
         course: "Cyberpreneurship",
         title: "Pertemuan 7 - Payment Per Click",
@@ -286,8 +279,9 @@ Kesimpulan
 PPC merupakan sistem iklan yang menghasilkan uang berdasarkan klik. Google AdSense menjadi salah satu layanan PPC yang dapat dimanfaatkan pemilik website dan YouTube untuk memperoleh penghasilan dari iklan.
         `,
         createdAt: "2026-11-11"
-   },
-   {
+    },
+
+    {
         id: 8,
         course: "Cyberpreneurship",
         title: "Pertemuan 9 - Affiliate Marketing",
