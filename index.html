@@ -1,1 +1,266 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rangkuman Prima — Study Notes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="noise"></div>
+
+  <!-- HEADER -->
+  <header class="topbar">
+
+    <a class="brand" href="#dashboard">
+      <span class="brand-mark">R.</span>
+
+      <span>
+        RANGKUMAN PRIMA
+        <span class="brand-sub">/ STUDY ARCHIVE</span>
+      </span>
+    </a>
+
+    <!-- LOGO MARKETPLACE -->
+    <div class="marketplaces">
+
+      <a href="https://shopee.co.id/"
+         target="_blank"
+         rel="noopener"
+         title="Shopee">
+
+        <img src="assets/shopee-logo.png"
+             alt="Shopee">
+
+      </a>
+
+      <a href="https://www.tokopedia.com/"
+         target="_blank"
+         rel="noopener"
+         title="Tokopedia">
+
+        <img src="assets/tokped-logo.png"
+             alt="Tokopedia">
+
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <main class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <!-- PROFILE -->
+      <div class="profile-card panel">
+
+        <div class="profile-cover"></div>
+
+        <div class="avatar" id="avatarInitial">S</div>
+
+        <p class="eyebrow">OWNER PROFILE</p>
+
+        <h2 id="profileName">Student Name</h2>
+
+        <p class="profile-major" id="profileMajor">
+          Your major / campus
+        </p>
+
+        <span class="eyebrow">PUBLIC PROFILE</span>
+
+      </div>
+
+
+      <!-- NAVIGATION -->
+      <nav class="side-nav">
+
+        <a class="active" href="#dashboard">
+          ▦ <span>Dashboard</span>
+        </a>
+
+        <a href="#saved-notes">
+          ▤ <span>Arsip rangkuman</span>
+        </a>
+
+      </nav>
+
+
+      <div class="sidebar-stamp">
+        KEEP LEARNING.<br>
+        STAY CURIOUS.
+      </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <section class="content" id="dashboard">
+
+      <!-- HERO -->
+      <div class="hero">
+
+        <div>
+
+          <p class="eyebrow">
+            PUBLIC KNOWLEDGE BASE / 001
+          </p>
+
+          <h1>
+            CATAT. PAHAMI.<br>
+            <span>RANGKUM.</span>
+          </h1>
+
+          <p class="hero-copy">
+            Satu tempat untuk membaca dan memahami
+            rangkuman materi perkuliahan.
+          </p>
+
+        </div>
+
+        <div class="hero-sticker">
+          <span>MAKE<br>IT<br>STICK</span>
+          <b>✳</b>
+        </div>
+
+      </div>
+
+
+      <!-- STATISTICS -->
+      <div class="stats">
+
+        <div class="stat panel">
+
+          <span class="stat-label">
+            TOTAL RANGKUMAN
+          </span>
+
+          <strong id="totalNotes">0</strong>
+
+          <small>catatan tersedia</small>
+
+        </div>
+
+
+        <div class="stat panel">
+
+          <span class="stat-label">
+            MATA KULIAH
+          </span>
+
+          <strong id="totalCourses">0</strong>
+
+          <small>subjek berbeda</small>
+
+        </div>
+
+
+        <div class="stat panel">
+
+          <span class="stat-label">
+            AKSES WEBSITE
+          </span>
+
+          <strong class="status-word">
+            PUBLIC
+          </strong>
+
+          <small>read only access</small>
+
+        </div>
+
+      </div>
+
+
+      <!-- ARCHIVE -->
+      <section class="section archive" id="saved-notes">
+
+        <div class="section-heading">
+
+          <div>
+
+            <p class="eyebrow">
+              01 / PUBLIC LIBRARY
+            </p>
+
+            <h2>ARSIP RANGKUMAN</h2>
+
+          </div>
+
+          <span class="archive-count" id="archiveCount">
+            0 FILES
+          </span>
+
+        </div>
+
+
+        <!-- SEARCH -->
+        <div class="toolbar">
+
+          <input
+            id="searchInput"
+            class="search"
+            type="search"
+            placeholder="⌕ Cari mata kuliah atau judul..."
+          >
+
+          <span class="eyebrow">
+            SORTED BY LATEST
+          </span>
+
+        </div>
+
+
+        <!-- NOTES -->
+        <div id="notesList" class="notes-list">
+
+          <div class="empty-state">
+
+            <span>✳</span>
+
+            <h3>ARSIP MASIH KOSONG</h3>
+
+            <p>
+              Belum ada rangkuman materi yang dipublikasikan.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer>
+
+        RANGKUMAN PRIMA © 2026
+
+        <span>
+          PUBLIC STUDY ARCHIVE — END OF PAGE
+        </span>
+
+      </footer>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
