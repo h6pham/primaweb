@@ -1,1 +1,1170 @@
 
+/* =========================================
+   RANGKUMAN PRIMA
+   OCEAN THEME
+========================================= */
+
+
+/* =========================================
+   1. GLOBAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #082c45;
+    --deep-blue: #0b4565;
+    --ocean: #087e9e;
+    --turquoise: #20b8b0;
+    --sky: #dff5fa;
+    --light-blue: #edf8fb;
+    --white: #ffffff;
+    --text: #17384c;
+    --muted: #7793a3;
+    --border: #d9eaf0;
+    --shadow: 0 8px 25px rgba(8, 44, 69, 0.08);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--light-blue);
+    color: var(--text);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+/* =========================================
+   2. BACKGROUND DECORATION
+========================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(32, 184, 176, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(8, 126, 158, 0.10),
+            transparent 35%
+        );
+}
+
+.noise {
+    display: none;
+}
+
+
+/* =========================================
+   3. HEADER
+========================================= */
+
+.topbar {
+    width: 100%;
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5.2%;
+
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* BRAND */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--navy);
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.brand-mark {
+    width: 38px;
+    height: 38px;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--ocean);
+    color: var(--white);
+
+    border-radius: 12px;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.brand-sub {
+    display: block;
+
+    margin-top: 3px;
+
+    color: var(--muted);
+
+    font-family: "DM Mono", monospace;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+
+
+/* MARKETPLACE LOGOS */
+
+.marketplaces {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.marketplaces a {
+    width: 30px;
+    height: 30px;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--light-blue);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    transition: 0.3s ease;
+}
+
+.marketplaces a:hover {
+    transform: translateY(-3px);
+    background: var(--sky);
+}
+
+.marketplaces img {
+    width: 15px;
+    height: 15px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   4. MAIN LAYOUT
+========================================= */
+
+.layout {
+    width: 100%;
+    max-width: 1440px;
+
+    margin: auto;
+    padding: 35px 5.2%;
+
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+
+    gap: 40px;
+}
+
+.sidebar {
+    position: sticky;
+    top: 25px;
+
+    height: calc(100vh - 50px);
+    min-height: 550px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    min-width: 0;
+}
+
+
+/* =========================================
+   5. CARD GENERAL
+========================================= */
+
+.panel {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    box-shadow: var(--shadow);
+}
+
+
+/* =========================================
+   6. PROFILE CARD
+========================================= */
+
+.profile-card {
+    position: relative;
+
+    padding: 0 20px 22px;
+    overflow: hidden;
+}
+
+.profile-cover {
+    height: 85px;
+
+    margin: 0 -20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--deep-blue),
+            var(--ocean),
+            var(--turquoise)
+        );
+}
+
+.avatar {
+    width: 62px;
+    height: 62px;
+
+    display: grid;
+    place-items: center;
+
+    margin-top: -31px;
+
+    position: relative;
+
+    background: var(--turquoise);
+    color: var(--white);
+
+    border: 4px solid var(--white);
+    border-radius: 18px;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.eyebrow {
+    margin-bottom: 9px;
+
+    color: var(--ocean);
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.profile-card .eyebrow {
+    margin-top: 17px;
+}
+
+.profile-card h2 {
+    margin-bottom: 5px;
+
+    color: var(--navy);
+    font-size: 19px;
+}
+
+.profile-major {
+    margin-bottom: 15px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   7. SIDEBAR NAVIGATION
+========================================= */
+
+.side-nav {
+    display: grid;
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+.side-nav a {
+    display: flex;
+    align-items: center;
+
+    padding: 14px 15px;
+
+    color: var(--muted);
+    text-decoration: none;
+
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+.side-nav a span {
+    margin-left: 9px;
+}
+
+.side-nav a:hover,
+.side-nav a.active {
+    background: var(--sky);
+    color: var(--ocean);
+}
+
+.sidebar-stamp {
+    margin-top: auto;
+    padding: 18px;
+
+    color: var(--ocean);
+    background: var(--sky);
+
+    border-radius: 12px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   8. HERO SECTION
+========================================= */
+
+.hero {
+    min-height: 245px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 30px;
+
+    background:
+        linear-gradient(
+            120deg,
+            var(--navy),
+            var(--deep-blue),
+            var(--ocean)
+        );
+
+    border-radius: 20px;
+
+    color: var(--white);
+
+    overflow: hidden;
+    position: relative;
+}
+
+.hero .eyebrow {
+    color: #91e5df;
+}
+
+.hero h1 {
+    margin: 17px 0;
+
+    color: var(--white);
+
+    font-size: clamp(40px, 5vw, 68px);
+    line-height: 0.95;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    color: #55dfd0;
+}
+
+.hero-copy {
+    max-width: 400px;
+
+    color: #c2e2ed;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.hero-sticker {
+    width: 115px;
+    height: 115px;
+
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    color: var(--white);
+
+    border: 2px solid rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    text-align: center;
+
+    transform: rotate(10deg);
+}
+
+.hero-sticker b {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+
+    color: #55dfd0;
+
+    font-size: 30px;
+}
+
+
+/* =========================================
+   9. STATISTICS
+========================================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin: 25px 0 35px;
+}
+
+.stat {
+    padding: 19px;
+
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+}
+
+.stat-label {
+    display: block;
+
+    color: var(--muted);
+
+    font-family: "DM Mono", monospace;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.stat strong {
+    display: block;
+
+    margin: 9px 0 3px;
+
+    color: var(--navy);
+    font-size: 29px;
+}
+
+.stat small {
+    color: var(--muted);
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+}
+
+.stat .status-word {
+    margin-top: 15px;
+
+    color: var(--turquoise);
+    font-size: 19px;
+}
+
+
+/* =========================================
+   10. SECTION
+========================================= */
+
+.section {
+    padding: 25px;
+    margin-bottom: 35px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    box-shadow: var(--shadow);
+}
+
+.archive {
+    padding: 0;
+
+    background: transparent;
+
+    border: none;
+    box-shadow: none;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.section-heading h2 {
+    color: var(--navy);
+
+    font-size: 21px;
+    letter-spacing: -0.5px;
+}
+
+.archive-count,
+.section-number {
+    color: var(--ocean);
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+}
+
+
+/* =========================================
+   11. SEARCH BAR
+========================================= */
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.search {
+    width: 100%;
+    max-width: 400px;
+
+    padding: 13px 16px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    color: var(--text);
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.search:focus {
+    border-color: var(--turquoise);
+
+    box-shadow:
+        0 0 0 3px rgba(32, 184, 176, 0.12);
+}
+
+.toolbar .eyebrow {
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   12. NOTES / ARCHIVE
+========================================= */
+
+.notes-list {
+    display: grid;
+    gap: 15px;
+}
+
+.note-card {
+    padding: 21px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    box-shadow: var(--shadow);
+
+    transition: 0.3s ease;
+}
+
+.note-card:hover {
+    border-color: #a8dce4;
+
+    box-shadow:
+        0 12px 30px rgba(8, 44, 69, 0.11);
+}
+
+.note-top {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.course-tag {
+    color: var(--ocean);
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.note-card h3 {
+    margin: 9px 0 13px;
+
+    color: var(--navy);
+
+    font-size: 19px;
+}
+
+.note-body {
+    color: #526d7d;
+
+    font-size: 13px;
+    line-height: 1.9;
+
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.note-meta {
+    padding-top: 14px;
+    margin-top: 15px;
+
+    color: var(--muted);
+
+    border-top: 1px solid var(--border);
+
+    font-family: "DM Mono", monospace;
+    font-size: 9px;
+}
+
+
+/* =========================================
+   13. EMPTY STATE
+========================================= */
+
+.empty-state {
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 35px 20px;
+
+    background: var(--white);
+
+    border: 1px dashed #b7dce5;
+    border-radius: 15px;
+
+    color: var(--muted);
+
+    text-align: center;
+}
+
+.empty-state span {
+    margin-bottom: 12px;
+
+    color: var(--turquoise);
+
+    font-size: 30px;
+}
+
+.empty-state h3 {
+    margin-bottom: 8px;
+
+    color: var(--navy);
+
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+}
+
+.empty-state p {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   14. FOOTER
+========================================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 20px 0;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--muted);
+
+    font-family: "DM Mono", monospace;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   15. READ ONLY MODE
+========================================= */
+
+#noteForm,
+#profileDialog,
+#editDialog,
+#editProfileBtn,
+.note-actions {
+    display: none !important;
+}
+
+
+/* =========================================
+   16. RESPONSIVE TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .sidebar {
+        position: static;
+
+        height: auto;
+        min-height: 0;
+    }
+
+    .side-nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .side-nav a {
+        justify-content: center;
+    }
+
+    .sidebar-stamp {
+        display: none;
+    }
+
+    .hero {
+        min-height: 210px;
+    }
+
+}
+
+
+/* =========================================
+   17. RESPONSIVE MOBILE
+========================================= */
+
+@media (max-width: 560px) {
+
+    .topbar {
+        height: 65px;
+        padding: 0 5%;
+    }
+
+    .brand {
+        font-size: 11px;
+    }
+
+    .layout {
+        padding: 22px 5%;
+    }
+
+    .hero {
+        min-height: 190px;
+        padding: 22px 18px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        letter-spacing: -2px;
+    }
+
+    .hero-sticker {
+        width: 75px;
+        height: 75px;
+
+        font-size: 9px;
+    }
+
+    .hero-copy {
+        font-size: 11px;
+    }
+
+    .stats {
+        gap: 8px;
+    }
+
+    .stat {
+        padding: 12px 9px;
+    }
+
+    .stat-label {
+        font-size: 7px;
+    }
+
+    .stat strong {
+        font-size: 23px;
+    }
+
+    .stat small {
+        font-size: 8px;
+    }
+
+    .stat .status-word {
+        font-size: 13px;
+    }
+
+    .section {
+        padding: 17px;
+    }
+
+    .section-heading h2 {
+        font-size: 17px;
+    }
+
+    .toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .search {
+        max-width: 100%;
+    }
+
+    .note-card {
+        padding: 17px;
+    }
+
+    .note-card h3 {
+        font-size: 16px;
+    }
+
+    .note-body {
+        font-size: 12px;
+    }
+
+    footer {
+        flex-direction: column;
+        line-height: 1.7;
+    }
+
+}
+
+.avatar {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.marketplaces {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.marketplaces img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE - OCEAN THEME
+======================================== */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 0;
+    }
+
+    .topbar {
+        padding: 14px 18px;
+        gap: 12px;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+
+    .marketplaces {
+        gap: 8px;
+    }
+
+    .marketplaces img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        padding: 18px;
+        gap: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+
+    .side-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .side-nav a {
+        flex: 1;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 25px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .section {
+        padding: 18px;
+    }
+
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .note-card {
+        padding: 18px;
+    }
+}
+
+
+/* ========================================
+   MOBILE PHONE
+======================================== */
+
+@media screen and (max-width: 480px) {
+
+    .topbar {
+        padding: 12px 14px;
+    }
+
+    .brand {
+        font-size: 15px;
+    }
+
+    .marketplaces {
+        gap: 6px;
+    }
+
+    .marketplaces img {
+        width: 23px;
+        height: 23px;
+    }
+
+    .layout {
+        padding: 12px;
+        gap: 16px;
+    }
+
+    .profile-card {
+        border-radius: 16px;
+    }
+
+    .profile-cover {
+        height: 90px;
+    }
+
+    .avatar {
+        width: 75px;
+        height: 75px;
+    }
+
+    .hero {
+        padding: 22px 17px;
+        border-radius: 18px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .hero-sticker {
+        display: none;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+    .stat {
+        padding: 13px;
+        min-width: 0;
+    }
+
+    .stat h3 {
+        font-size: 20px;
+    }
+
+    .stat p {
+        font-size: 11px;
+    }
+
+    .section {
+        padding: 15px;
+        border-radius: 16px;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .section-heading h2 {
+        font-size: 19px;
+    }
+
+    .archive {
+        width: 100%;
+    }
+
+    .note-card {
+        padding: 15px;
+        border-radius: 14px;
+    }
+
+    .note-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .note-card h3 {
+        font-size: 16px;
+    }
+
+    .note-body {
+        font-size: 13px;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    .note-meta {
+        font-size: 11px;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        padding: 20px 14px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+
+/* ========================================
+   SMALL PHONE
+======================================== */
+
+@media screen and (max-width: 360px) {
+
+    .brand {
+        font-size: 13px;
+    }
+
+    .marketplaces img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 12px;
+    }
+
+    .note-card {
+        padding: 12px;
+    }
+}
+
