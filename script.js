@@ -43,8 +43,30 @@ const notes = [
         course: "Cyberpreneurship",
         title: "Pertemuan 2 - Materi Berikutnya",
         summary: `
-            Masukkan rangkuman materi pertemuan kedua
-            di sini.
+1. Pengertian Cyberpreneurship
+Cyberpreneurship adalah kegiatan menjalankan bisnis secara online dengan memanfaatkan internet untuk memperoleh penghasilan. Seorang cyberpreneur biasanya menggunakan website, media sosial, dan berbagai tools digital untuk memasarkan produk atau jasa.
+
+Googlepreneur adalah orang yang memanfaatkan layanan Google untuk menghasilkan uang, seperti Google AdSense, YouTube, Blogger, Google Ads, dan Google Analytics.
+2. Rumus Sukses CTPM
+CTPM merupakan empat tahapan penting dalam membangun bisnis online:
+1. Content: Membuat konten yang menarik dan bermanfaat.
+2. Traffic: Mendatangkan pengunjung ke website atau media sosial.
+3. Presell: Memberikan ulasan atau rekomendasi produk agar calon pembeli tertarik.
+4. Monetize: Menghasilkan uang melalui penjualan, iklan, atau afiliasi.
+3. Langkah Menjadi Cyberpreneur
+- Memiliki pola pikir bisnis dan motivasi yang kuat.
+- Fokus pada satu atau dua jenis bisnis online.
+- Memilih niche sesuai minat dan kebutuhan pasar.
+- Menyusun rencana bisnis, mulai dari analisis pesaing hingga strategi pemasaran.
+- Menerapkan tahapan CTPM secara konsisten.
+4. Lima Model Bisnis Online
+1. Menjual Produk Sendiri: Menjual barang, produk digital, atau layanan melalui internet.
+2. Menjual Keahlian: Menawarkan jasa seperti desain grafis, penulisan, dan pembuatan website.
+3. Affiliate Marketing: Mempromosikan produk orang lain dan memperoleh komisi dari hasilnya.
+4. Contextual Advertising: Mendapatkan penghasilan dari iklan yang dipasang di website.
+5. Site Flipping: Membeli, mengembangkan, atau menjual website dan aset digital yang memiliki nilai.
+Kesimpulan
+Cyberpreneurship merupakan peluang bisnis yang memanfaatkan teknologi internet untuk memperoleh penghasilan. Keberhasilannya membutuhkan strategi yang tepat, konsistensi, pemilihan model bisnis, serta penerapan rumus CTPM.
         `,
         createdAt: "2026-11-12"
     }
